@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Moved to geomcore.github.io</title>
+<script>
+  // geomcore and geomcore-viewer moved to the geomcore organization:
+  // forward any old path, keeping the query string (viewer ?scene=) and anchor.
+  var path = location.pathname;
+  if (/^\/geomcore(-viewer)?(\/|$)/.test(path)) {
+    location.replace("https://geomcore.github.io" + path + location.search + location.hash);
+  }
+</script>
+<p>This page moved to <a href="https://geomcore.github.io/geomcore/">geomcore.github.io/geomcore</a>.</p>
